@@ -24,5 +24,10 @@
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-file-append": "0.0.6"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "skeleton-css": "^2.0.4"
   }
 }
