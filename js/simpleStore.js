@@ -261,7 +261,7 @@ var simpleStore = {
 
         // Checks to make sure file exists
         $.get(s.JSONFile)
-            .success(function () {
+            .then(function () {
                 // Get product data from JSON file
                 $.getJSON(s.JSONFile, function (data) {
                     simpleStore.setProducts(data.products);
@@ -306,7 +306,7 @@ var simpleStore = {
 
 		if (s.mode === "JSON") {
 			 $.get(s.JSONFile)
-				.success(function () {
+				.then(function () {
 					$.getJSON(s.JSONFile, function (data) {
 						var JSONData = data.products;
 						if (simpleStore.verifyCheckoutData(checkoutData, JSONData, true)) {
